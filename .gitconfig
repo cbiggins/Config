@@ -1,0 +1,57 @@
+[user]
+	name = Christian Biggins
+	email = cbiggins@gmail.com
+
+[diff]
+    renames = copies
+ 
+[color]
+    branch = always
+    diff = always
+    status = true
+    ui = true
+ 
+[web]
+    browser = chrome
+
+[alias]
+    co = checkout
+    s = status
+    c = commit
+    d = diff
+    desc = describe --tags
+    a = add
+    b = branch
+    f = fetch
+    l = log --decorate
+    m = merge
+    p = push
+    r = rebase
+    re = reset
+    sh = show
+    t = tag
+    up = pull --rebase
+    changelog = log --no-merges --pretty=format:'* %s - %an'
+
+[instaweb]
+    local = true
+    httpd = /usr/sbin/httpd
+    port = 4321
+    browser = firefox
+    modulepath = /usr/libexec/apache2
+
+[core]
+    editor = vim
+
+[merge]
+    #tool = opendiff
+    #tool = filemerge
+    tool = diffmerge
+
+[push]
+	default = current
+
+[github]
+	user = cbiggins
+[mergetool "[tool]"]
+	cmd = diffmerge
